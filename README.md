@@ -11,11 +11,11 @@
 5. Endpoints can be accessed at http://localhost:8000/.
    The following endpoints are available:
 
-GET health check - /healthCheck
-GET raw scorecard data - /scorecard
-GET overall scorecard averages - /scorecardAverages
-GET scorecard average per user - /scorecardAveragesPerRep?username=
-GET scorecard average per category - /scorecardAveragesPerQuestion?question=
+   - GET health check - /healthCheck
+   - GET raw scorecard data - /scorecard
+   - GET overall scorecard averages - /scorecardAverages
+   - GET scorecard average per user - /scorecardAveragesPerRep?username=
+   - GET scorecard average per category - /scorecardAveragesPerQuestion?question=
 
 ## Starting the client
 
@@ -28,6 +28,6 @@ GET scorecard average per category - /scorecardAveragesPerQuestion?question=
 4. Go to http://localhost:3000/
 
 5. Main features are as following:
-   Query for overal user scorecard average
-   Query for overall category average score
-   View all scorecard averages in Table format and drill down to scorecard breakdown in modal view.
+   - Query for overal user scorecard average
+   - Query for overall category average score
+   - View all scorecard averages in Table format and drill down to scorecard breakdown in modal view.
