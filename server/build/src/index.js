@@ -17,6 +17,8 @@ const INSPECTION = 'inspection';
 const PRICING = 'pricing';
 const OBJECTION_HANDLING = 'objectionhandling';
 const CLOSING = 'closing';
+const CATEGORY_NOT_FOUND = 'Category not found';
+const USER_NOT_FOUND = 'User not found';
 const keys = [
     INTRO,
     COMPANY_STORY,
@@ -97,11 +99,18 @@ function getScorecardAveragePerRep(username) {
             sum += scorecardAverage.scorecard_average;
         }
     }
+    // no rep should be getting all 0s so its an indicator that the rep does not exist
+    if (sum === 0) {
+        throw Error(USER_NOT_FOUND);
+    }
     return (sum / averages.length).toString();
 }
 function getScorecardAveragePerQuestion(question) {
     // standardize input
     const category = question.replace(' ', '').toLowerCase();
+    if (!overallScores.has(category)) {
+        throw Error(CATEGORY_NOT_FOUND);
+    }
     const sum = overallScores.get(category);
     if (sum) {
         return (sum / scorecardAverages.length).toString();

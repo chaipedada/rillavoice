@@ -17,6 +17,8 @@ const INSPECTION = 'inspection';
 const PRICING = 'pricing';
 const OBJECTION_HANDLING = 'objectionhandling';
 const CLOSING = 'closing';
+const CATEGORY_NOT_FOUND = 'Category not found';
+const USER_NOT_FOUND = 'User not found';
 
 const keys = [
   INTRO,
@@ -127,12 +129,18 @@ function getScorecardAveragePerRep(username: string): string {
       sum += scorecardAverage.scorecard_average;
     }
   }
+  if (sum === 0) {
+    return USER_NOT_FOUND;
+  }
   return (sum / averages.length).toString();
 }
 
 function getScorecardAveragePerQuestion(question: string): string {
   // standardize input
   const category = question.replace(' ', '').toLowerCase();
+  if (!overallScores.has(category)) {
+    return CATEGORY_NOT_FOUND;
+  }
   const sum = overallScores.get(category);
   if (sum) {
     return (sum / scorecardAverages.length).toString();

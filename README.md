@@ -19,7 +19,7 @@
 
 # Files to Note
 
-- index.ts
+- src/index.ts
 
 ## Starting the client
 
