@@ -17,6 +17,10 @@
    - GET scorecard average per user - /scorecardAveragesPerRep?username=
    - GET scorecard average per category - /scorecardAveragesPerQuestion?question=
 
+# Files to Note
+
+- index.ts
+
 ## Starting the client
 
 1. `cd client/my-app`
@@ -31,3 +35,9 @@
    - Query for overal user scorecard average
    - Query for overall category average score
    - View all scorecard averages in Table format and drill down to scorecard breakdown in modal view.
+
+# Files to Note
+
+- src/App.js
+- src/Scorecard.js
+- src/BreakdownModal.js
