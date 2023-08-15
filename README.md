@@ -47,10 +47,16 @@
 
 # Overall View
 <img width="1066" alt="Screen Shot 2023-08-15 at 12 34 07 AM" src="https://github.com/chaipedada/rillavoice/assets/29969961/4ec17acb-5beb-4ce0-be71-717279854f23">
+
+
 # Breakdown Modal
 <img width="653" alt="Screen Shot 2023-08-15 at 12 34 17 AM" src="https://github.com/chaipedada/rillavoice/assets/29969961/0aac616d-4896-4b64-bc18-457407220661">
+
+
 # Search for User
 <img width="548" alt="Screen Shot 2023-08-15 at 12 35 14 AM" src="https://github.com/chaipedada/rillavoice/assets/29969961/bace7905-ba79-47b5-b06a-3cc42c817593">
+
+
 # Search for Category
 <img width="553" alt="Screen Shot 2023-08-15 at 12 35 28 AM" src="https://github.com/chaipedada/rillavoice/assets/29969961/8061cb51-e721-4af9-95dc-86a3b504132f">
 
